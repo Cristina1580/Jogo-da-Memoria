@@ -91,49 +91,50 @@ h2 {
   transform: rotateY(180deg);
 }
 
-/* ====== RESPONSIVIDADE PARA CELULARES ====== */
+/* 📱 Ajustes de tamanho para telas pequenas */
 @media (max-width: 768px) {
-  .game-board {
-    transform: scale(1.2); /* aumenta o tabuleiro */
-    max-width: 95vw;       /* usa quase toda a largura da tela */
-    gap: 10px;             /* espaço entre cartas */
+  .container {
+    padding: 30px;
+    gap: 20px;
   }
 
-  .card {
-    font-size: 2.5rem; /* aumenta os emojis */
-    width: 70px;
-    height: 70px;
+  h2 {
+    font-size: 2em;
   }
 
-  h1 {
-    font-size: 1.8rem; /* título maior no celular */
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
-
-/* para telas bem pequenas (como Galaxy M14) */
-@media (max-width: 480px) {
-  .game-board {
-    transform: scale(1.4); /* aumenta mais um pouco */
+  .game {
+    width: 320px;
+    height: 320px;
     gap: 8px;
   }
 
-  .card {
-    font-size: 2.8rem;
-    width: 75px;
-    height: 75px;
+  .item {
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
   }
 
-  h1 {
-    font-size: 1.6rem;
+  .reset {
+    font-size: 1.2em;
+    padding: 10px 15px;
+  }
+}
+
+/* 📲 Ajuste fino para celulares muito pequenos */
+@media (max-width: 480px) {
+  .game {
+    width: 280px;
+    height: 280px;
+    gap: 6px;
   }
 
-  button {
-    font-size: 1rem;
-    padding: 12px 25px;
+  .item {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.8em;
   }
 }
