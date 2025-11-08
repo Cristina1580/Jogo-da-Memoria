@@ -91,61 +91,49 @@ h2 {
   transform: rotateY(180deg);
 }
 
-/* 🧠 Responsividade */
+/* ====== RESPONSIVIDADE PARA CELULARES ====== */
 @media (max-width: 768px) {
-  .container {
-    padding: 20px 30px;
-    gap: 20px;
+  .game-board {
+    transform: scale(1.2); /* aumenta o tabuleiro */
+    max-width: 95vw;       /* usa quase toda a largura da tela */
+    gap: 10px;             /* espaço entre cartas */
   }
 
-  h2 {
-    font-size: 2em;
-    text-align: center;
+  .card {
+    font-size: 2.5rem; /* aumenta os emojis */
+    width: 70px;
+    height: 70px;
   }
 
-  .game {
-    width: 320px;
-    height: 320px;
+  h1 {
+    font-size: 1.8rem; /* título maior no celular */
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* para telas bem pequenas (como Galaxy M14) */
+@media (max-width: 480px) {
+  .game-board {
+    transform: scale(1.4); /* aumenta mais um pouco */
     gap: 8px;
   }
 
-  .item {
-    width: 70px;
-    height: 70px;
-    font-size: 2em;
+  .card {
+    font-size: 2.8rem;
+    width: 75px;
+    height: 75px;
   }
 
-  .reset {
-    font-size: 1.2em;
-    padding: 10px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 15px 20px;
-    gap: 15px;
+  h1 {
+    font-size: 1.6rem;
   }
 
-  h2 {
-    font-size: 1.6em;
-  }
-
-  .game {
-    width: 260px;
-    height: 260px;
-    gap: 6px;
-  }
-
-  .item {
-    width: 55px;
-    height: 55px;
-    font-size: 1.8em;
-  }
-
-  .reset {
-    font-size: 1em;
-    padding: 8px 12px;
+  button {
+    font-size: 1rem;
+    padding: 12px 25px;
   }
 }
-
