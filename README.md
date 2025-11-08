@@ -1,3 +1,4 @@
+
 # 🧩 Jogo da Memória 🎮  
 
 Um jogo da memória divertido feito com **HTML, CSS e JavaScript**, onde o objetivo é combinar pares de emojis no menor tempo possível.  
@@ -40,5 +41,4 @@ Os efeitos sonoros foram obtidos em sites de sons gratuitos como:
    ```bash
    git clone https://github.com/Cristina1580/Jogo-da-Memoria.git
 2. Ou acesse https://cristina1580.github.io/Jogo-da-Memoria/ 
-
 
