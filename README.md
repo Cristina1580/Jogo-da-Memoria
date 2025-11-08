@@ -39,4 +39,6 @@ Os efeitos sonoros foram obtidos em sites de sons gratuitos como:
 1. Baixe ou clone este repositório:
    ```bash
    git clone https://github.com/Cristina1580/Jogo-da-Memoria.git
+2. Ou acesse https://cristina1580.github.io/Jogo-da-Memoria/ 
+
 
